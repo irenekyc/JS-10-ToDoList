@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS-10-checklist</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a1e74affc8.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link rel="icon" href="tasks-solid.svg">
+</head>
+<body>
+    <div class="web-container">
+        <div class="header">
+            <h1> To Do List Tracker </h1>
+            <ul>
+                <label for ="selfcare"><li> Selfcare</li></label>
+                <label for="miracle-morning"><li>The Miracle Morning </li></label>
+                <label for="customized"><li> Create your own</li></label>
+            </ul>
+        </div>
+        <div class="checklist-container">
+            <div class="list-container">
+                <input type="radio" name="todolist" id="selfcare">
+                <input type="radio" name="todolist" id="miracle-morning">
+                 <input type="radio" name="todolist" id="customized">
+                <div class="selfcare-list">
+                 
+                <ul>
+                    <li>
+                        <div class="listItem" id="selfcare-li1">
+                            <div class="list-icon">
+                                <i onclick="checklistIcon(this)" class="far fa-circle"></i>
+                            </div>
+                            <div class="list-item">
+                                <p>Meditate</p>
+                            </div>
+                            <div class="list-edit">
+                                <i class="far fa-times-circle"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="listItem" id="selfcare-li2">
+                            <div class="list-icon">
+                                <i onclick="checklistIcon(this)" class="far fa-circle"></i>
+                            </div>
+                            <div class="list-item">
+                                <p> Do Yoga</p>
+                            </div>
+                            <div class="list-edit">
+                                <i class="far fa-times-circle"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="listItem" id="selfcare-li3">
+                            <div class="list-icon">
+                                <i onclick="checklistIcon(this)" class="far fa-circle"></i>
+                            </div>
+                            <div class="list-item">
+                                <p> Veggie on every meal</p>
+                            </div>
+                            <div class="list-edit">
+                                <i class="far fa-times-circle"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="listItem" id="selfcare-li4">
+                            <div class="list-icon">
+                                <i onclick="checklistIcon(this)" class="far fa-circle"></i>
+                            </div>
+                            <div class="list-item">
+                                <p> 8 glasses of water</p>
+                            </div>
+                            <div class="list-edit">
+                                <i class="far fa-times-circle"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="listItem" id="selfcare-li5">
+                            <div class="list-icon">
+                                <i onclick="checklistIcon(this)" class="far fa-circle"></i>
+                            </div>
+                            <div class="list-item">
+                                <p> Read a chapter of a book</p>
+                            </div>
+                            <div class="list-edit">
+                                <i class="far fa-times-circle"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="listItem" id="selfcare-li6">
+                            <div class="list-icon">
+                                <i onclick="checklistIcon(this)" class="far fa-circle"></i>
+                            </div>
+                            <div class="list-item">
+                                <p> Daily gratitude Practise</p>
+                            </div>
+                            <div class="list-edit">
+                                <i class="far fa-times-circle"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="miracle-morning-list">
+                <ul>
+                    <li>
+                        <div class="listItem" id="miracle-morning-li1">
+                            <div class="list-icon">
+                                <i onclick="checklistIcon(this)" class="far fa-circle"></i>
+                            </div>
+                            <div class="list-item">
+                                <p>Silence</p>
+                            </div>
+                            <div class="list-edit">
+                                <i class="far fa-times-circle"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="listItem" id="miracle-morning-li2">
+                            <div class="list-icon">
+                                <i onclick="checklistIcon(this)" class="far fa-circle"></i>
+                            </div>
+                            <div class="list-item">
+                                <p> Affirmation</p>
+                            </div>
+                            <div class="list-edit">
+                                <i class="far fa-times-circle"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="listItem" id="miracle-morning-li3">
+                            <div class="list-icon">
+                                <i onclick="checklistIcon(this)" class="far fa-circle"></i>
+                            </div>
+                            <div class="list-item">
+                                <p> Visualisation</p>
+                            </div>
+                            <div class="list-edit">
+                                <i class="far fa-times-circle"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="listItem" id="miracle-morning-li4">
+                            <div class="list-icon">
+                                <i onclick="checklistIcon(this)" class="far fa-circle"></i>
+                            </div>
+                            <div class="list-item">
+                                <p> Exercise</p>
+                            </div>
+                            <div class="list-edit">
+                                <i class="far fa-times-circle"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="listItem" id="miracle-morning-li5">
+                            <div class="list-icon">
+                                <i onclick="checklistIcon(this)" class="far fa-circle"></i>
+                            </div>
+                            <div class="list-item">
+                                <p> Read</p>
+                            </div>
+                            <div class="list-edit">
+                                <i class="far fa-times-circle"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="listItem" id="miracle-morning-li6">
+                            <div class="list-icon">
+                                <i onclick="checklistIcon(this)" class="far fa-circle"></i>
+                            </div>
+                            <div class="list-item">
+                                <p> Scribing / Journaling</p>
+                            </div>
+                            <div class="list-edit">
+                                <i class="far fa-times-circle"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="create-own">
+                <div class="input-field-container">
+                    <input id="item-description" type="text" placeholder="Description" autofocus>
+                    <i id="add-list" class="far fa-check-circle"></i>
+                </div>
+                <div class="customized-list-container">
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
